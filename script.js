@@ -17,7 +17,7 @@ function calculateBMI() {
 
 	const bmi = weight / ((height / 100) * (height / 100));
 	const bmiValue = bmi.toFixed(1);
-
+changeBackgroundColor(bmi);
 	let category = "";
 
 	if (bmi < 18.5) {
