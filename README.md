@@ -1,3 +1,6 @@
+Nabila Rana Pradipta (3012310028)
+Nasywa Zahrainda Syafana (3012310030)
+
 ### BMI Calculator
 BMI calculator can be used to calculate body mass index of people.
 
