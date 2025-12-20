@@ -17,7 +17,7 @@ function calculateBMI() {
 
 	const bmi = weight / ((height / 100) * (height / 100));
 	const bmiValue = bmi.toFixed(1);
-
+changeBackgroundColor(bmi);
 	let category = "";
 
 	if (bmi < 18.5) {
@@ -32,4 +32,20 @@ function calculateBMI() {
 
 	document.getElementById("result").innerHTML =
 		`Your BMI is ${bmiValue}<br>Category: ${category}`;
+}
+
+function changeBackgroundColor(bmi) {
+	if (bmi < 18.5) {
+		document.body.style.backgroundImage =
+			"linear-gradient(120deg,#74b9ff,#a29bfe)";
+	} else if (bmi < 25) {
+		document.body.style.backgroundImage =
+			"linear-gradient(120deg,#55efc4,#00b894)";
+	} else if (bmi < 30) {
+		document.body.style.backgroundImage =
+			"linear-gradient(120deg,#fdcb6e,#f39c12)";
+	} else {
+		document.body.style.backgroundImage =
+			"linear-gradient(120deg,#ff6b6b,#d63031)";
+	}
 }
